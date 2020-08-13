@@ -521,33 +521,33 @@ type VirtualServers struct {
 
 // VirtualServer contains information about each individual virtual server.
 type VirtualServer struct {
-	Name                     string        `json:"name,omitempty"`
-	Partition                string        `json:"partition,omitempty"`
-	FullPath                 string        `json:"fullPath,omitempty"`
-	Generation               int           `json:"generation,omitempty"`
-	AddressStatus            string        `json:"addressStatus,omitempty"`
-	AutoLastHop              string        `json:"autoLastHop,omitempty"`
-	CMPEnabled               string        `json:"cmpEnabled,omitempty"`
-	ConnectionLimit          int           `json:"connectionLimit,omitempty"`
-	Destination              string        `json:"destination,omitempty"`
-	Description              string        `json:"description,omitempty"`
-	Enabled                  bool          `json:"enabled,omitempty"`
-	FallbackPersistence      string        `json:"fallbackPersistence,omitempty"`
-	GTMScore                 int           `json:"gtmScore,omitempty"`
-	IPForward                bool          `json:"ipForward,omitempty"`
-	IPProtocol               string        `json:"ipProtocol,omitempty"`
-	Mask                     string        `json:"mask,omitempty"`
-	Metadata                 []Metadata    `json:"metadata,omitempty"`
-	Mirror                   string        `json:"mirror,omitempty"`
-	MobileAppTunnel          string        `json:"mobileAppTunnel,omitempty"`
-	NAT64                    string        `json:"nat64,omitempty"`
-	Pool                     string        `json:"pool,omitempty"`
-	Persistence              []Persistence `json:"persist,omitempty"`
-	RateLimit                string        `json:"rateLimit,omitempty"`
-	RateLimitDestinationMask int           `json:"rateLimitDstMask,omitempty"`
-	RateLimitMode            string        `json:"rateLimitMode,omitempty"`
-	RateLimitSourceMask      int           `json:"rateLimitSrcMask,omitempty"`
-	Source                   string        `json:"source,omitempty"`
+	Name                     string         `json:"name,omitempty"`
+	Partition                string         `json:"partition,omitempty"`
+	FullPath                 string         `json:"fullPath,omitempty"`
+	Generation               int            `json:"generation,omitempty"`
+	AddressStatus            string         `json:"addressStatus,omitempty"`
+	AutoLastHop              string         `json:"autoLastHop,omitempty"`
+	CMPEnabled               string         `json:"cmpEnabled,omitempty"`
+	ConnectionLimit          int            `json:"connectionLimit,omitempty"`
+	Destination              string         `json:"destination,omitempty"`
+	Description              string         `json:"description,omitempty"`
+	Enabled                  bool           `json:"enabled,omitempty"`
+	FallbackPersistence      string         `json:"fallbackPersistence,omitempty"`
+	GTMScore                 int            `json:"gtmScore,omitempty"`
+	IPForward                bool           `json:"ipForward,omitempty"`
+	IPProtocol               string         `json:"ipProtocol,omitempty"`
+	Mask                     string         `json:"mask,omitempty"`
+	Metadata                 []Metadata     `json:"metadata,omitempty"`
+	Mirror                   string         `json:"mirror,omitempty"`
+	MobileAppTunnel          string         `json:"mobileAppTunnel,omitempty"`
+	NAT64                    string         `json:"nat64,omitempty"`
+	Pool                     string         `json:"pool,omitempty"`
+	Persistence              *[]Persistence `json:"persist,omitempty"`
+	RateLimit                string         `json:"rateLimit,omitempty"`
+	RateLimitDestinationMask int            `json:"rateLimitDstMask,omitempty"`
+	RateLimitMode            string         `json:"rateLimitMode,omitempty"`
+	RateLimitSourceMask      int            `json:"rateLimitSrcMask,omitempty"`
+	Source                   string         `json:"source,omitempty"`
 	SourceAddressTranslation struct {
 		Type string `json:"type,omitempty"`
 		Pool string `json:"pool,omitempty"`
